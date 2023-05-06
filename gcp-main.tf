@@ -13,16 +13,16 @@ resource "google_artifact_registry_repository" "repo-back-prod" {
   format = "DOCKER"
 }
 
-resource "google_artifact_registry_repository" "repo-front-hom" {
+resource "google_artifact_registry_repository" "repo-front-hml" {
   location = var.region
-  repository_id = "fiapg5spotmusicfrontendartifacthom"
+  repository_id = "fiapg5spotmusicfrontendartifacthml"
   description = "Imagens Docker"
   format = "DOCKER"
 }
 
-resource "google_artifact_registry_repository" "repo-back-hom" {
+resource "google_artifact_registry_repository" "repo-back-hml" {
   location = var.region
-  repository_id = "fiapg5spotmusicbackendartifacthom"
+  repository_id = "fiapg5spotmusicbackendartifacthml"
   description = "Imagens Docker"
   format = "DOCKER"
 }
