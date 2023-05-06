@@ -1,15 +1,15 @@
 
-resource "google_artifact_registry_repository" "fiapg5spotmusicfrontendartifactprd" {
+resource "google_artifact_registry_repository" "repo-front-prod" {
   location = var.region
-  repository_id = "FiapG5_SpotMusic_backend"
+  repository_id = "fiapg5spotmusicfrontendartifactprd"
   description = "Imagens Docker"
   format = "DOCKER"
 }
 
 
-resource "google_artifact_registry_repository" "fiapg5spotmusicbackendartifactprd" {
+resource "google_artifact_registry_repository" "repo-back-prod" {
   location = var.region
-  repository_id = "FiapG5_SpotMusic_frontend"
+  repository_id = "fiapg5spotmusicfrontendartifactprd"
   description = "Imagens Docker"
   format = "DOCKER"
 }
