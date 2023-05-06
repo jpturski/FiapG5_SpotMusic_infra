@@ -1,6 +1,6 @@
 variable "project_name" {
   description = "Fiap 5 Spot Music"
-  type        = string,
+  type        = string
   default     = "grupo-05-384916"
 }
 
