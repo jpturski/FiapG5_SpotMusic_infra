@@ -6,10 +6,23 @@ resource "google_artifact_registry_repository" "repo-front-prod" {
   format = "DOCKER"
 }
 
-
 resource "google_artifact_registry_repository" "repo-back-prod" {
   location = var.region
   repository_id = "fiapg5spotmusicbackendartifactprd"
+  description = "Imagens Docker"
+  format = "DOCKER"
+}
+
+resource "google_artifact_registry_repository" "repo-front-hom" {
+  location = var.region
+  repository_id = "fiapg5spotmusicfrontendartifacthom"
+  description = "Imagens Docker"
+  format = "DOCKER"
+}
+
+resource "google_artifact_registry_repository" "repo-back-hom" {
+  location = var.region
+  repository_id = "fiapg5spotmusicbackendartifacthom"
   description = "Imagens Docker"
   format = "DOCKER"
 }
