@@ -9,7 +9,7 @@ resource "google_artifact_registry_repository" "repo-front-prod" {
 
 resource "google_artifact_registry_repository" "repo-back-prod" {
   location = var.region
-  repository_id = "fiapg5spotmusicfrontendartifactprd"
+  repository_id = "fiapg5spotmusicbackendartifactprd"
   description = "Imagens Docker"
   format = "DOCKER"
 }
